@@ -1,5 +1,6 @@
 import express from 'express'
 import cors from 'cors'
+export { default as MyButton } from './MyButton.vue'
 
 const app = express()
 app.use(cors())

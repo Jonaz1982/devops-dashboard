@@ -1,4 +1,11 @@
 {
+  "name": "devops-dashboard",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "components-lib"
+  ],
   "dependencies": {
     "vue-router": "^4.6.3"
   }

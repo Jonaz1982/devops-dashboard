@@ -1,5 +1,6 @@
 {
-  "name": "vue-components-playwright",
+  "name": "devops-dashboard-components",
+  "private": true,
   "version": "1.0.0",
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.es.js",

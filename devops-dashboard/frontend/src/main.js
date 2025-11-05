@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import VueComponentsPlaywrightLib from 'vue-components-playwright'
+import VueComponentsPlaywrightLib from 'devops-dashboard-components'
 
 const app = createApp(App)
 app.use(VueComponentsPlaywrightLib)
