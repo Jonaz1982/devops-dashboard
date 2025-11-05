@@ -1,7 +1,21 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import VueComponentsPlaywrightLib from 'devops-dashboard-components'
+import { createRouter, createWebHistory } from 'vue-router'
+
+// Views
+import Logs from './views/Logs.vue'
+
+// Rutas
+const routes = [
+  { path: '/', component: App },
+  { path: '/logs', component: Logs },
+]
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
 
 const app = createApp(App)
-app.use(VueComponentsPlaywrightLib)
+app.use(router)
 app.mount('#app')

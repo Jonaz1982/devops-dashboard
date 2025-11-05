@@ -4,6 +4,7 @@ import { getHealth } from '@/services/health'
 import { getCloudflareStatus } from '@/services/external'
 import { getProviderStatus } from '@/services/providers'
 import { getSystemMetrics } from '@/services/system'
+import CpuRamChart from '@/components/CpuRamChart.vue'
 
 const cpu = ref(null)
 const ram = ref(null)
@@ -93,7 +94,7 @@ function formatStatus(st) {
         <button class="nav-btn">Incidentes</button>
       </nav>
       <div class="sub-nav">
-        <span class="sub-link">Logs</span>
+        <button class="nav-btn" @click="$router.push('/logs')">Logs</button>
         <span class="sub-link">Alertas</span>
       </div>
     </aside>

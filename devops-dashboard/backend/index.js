@@ -61,3 +61,14 @@ app.get('/system', async (req, res) => {
 app.listen(3001, () => {
   console.log('✅ Backend running → http://localhost:3001')
 })
+
+// Logs simulados
+app.get('/logs', (req, res) => {
+  const logs = [
+    { ts: new Date().toISOString(), level: 'INFO', msg: 'Servicio iniciado correctamente.' },
+    { ts: new Date().toISOString(), level: 'WARN', msg: 'Respuesta lenta desde base de datos.' },
+    { ts: new Date().toISOString(), level: 'ERROR', msg: 'Fallo al conectar con API externa.' },
+  ]
+
+  res.json(logs)
+})
